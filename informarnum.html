@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informar o número</title>
+
+    
+    <style>
+        body{
+            background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(22, 75, 12));
+            height: 100vh;
+        }
+        
+        h1{
+            text-align: center;
+            font-size: 5vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(34, 194, 34);
+        }
+        
+        h3{
+            text-align: center;
+            font-size: 2.5vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(24, 160, 24);
+        }
+        
+        div.entrada{
+            margin-top: 2vh;
+            text-align: center;
+        }
+        
+        .botao{
+            margin-top: 2vh;
+            font-size: 3.5vh;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        button.botao{
+            background-color: rgb(43, 216, 43);
+        }
+        
+        input.entrada{
+            font-size: 3vh;
+            border-radius: 8px;
+            background-color: rgb(176, 179, 176);
+            text-align: center;
+        }
+        
+        img{
+            width: 30vh
+            height: 30vh;
+        }
+        
+        div.imagem{
+            text-align: center;
+            margin-top: 2vh;
+        }
+
+        p{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3vh;
+            color: rgb(10, 138, 10);
+        }
+        
+        </style>
+</head>
+
+<body>
+    
+    <h1>Qual será o número maior?</h1>
+    <h3>Informe aqui 3 (três) números diferentes:</h3>
+    
+    <div class="entrada">
+        
+        <input id="num1" class="entrada" placeholder="Digite um número..." type="number" step="0.01">
+        <input id="num2" class="entrada" placeholder="Digite um número..." type="number" step="0.01">
+        <input id="num3" class="entrada" placeholder="Digite um número..." type="number" step="0.01">
+        
+        
+    </div>
+    
+    <div class="botao">
+        
+        <button id="resultado" class="botao" onclick="calcularoMaiorValor()"><b>Qual será o maior?</b></button>
+        
+    </div>
+
+    
+   
+    <div class="imagem">
+
+        <img src="./img/roleta.gif" alt="Guaxinim girando uma roleta colorida">
+        
+    </div>
+
+<script>
+    function calcularoMaiorValor() {
+        const num1 = parseFloat(document.getElementById("num1").value);
+        const num2 = parseFloat(document.getElementById("num2").value);
+        const num3 = parseFloat(document.getElementById("num3").value);
+
+        let maior = num1
+        let menor = num1
+
+        if(num2 > maior){
+            maior = num2
+        } else if (num2 < menor){
+            menor = num2
+        }
+
+        if (num3 > maior){
+            maior = num3
+        } else if (num3 < menor){
+            menor = num3
+        }
+        document.getElementById("resultado").textContent = ("O maior valor é " +  maior);
+
+    }
+    
+</script>
+
+</body>
+</html>

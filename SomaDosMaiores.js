@@ -23,6 +23,6 @@ function SomaDosMaiores() {
     } else if (num3 > menor < maior){
         segmaior = num3
     } 
-    document.getElementById("resultado").textContent = ("O valor é " + maior + segmaior);
+    document.getElementById("resultado").textContent = ("O valor é " + maior);
 
 }

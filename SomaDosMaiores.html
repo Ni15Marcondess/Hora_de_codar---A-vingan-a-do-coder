@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Maiores</title>
+
+
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+
+        h1{
+            color: aliceblue;
+            font-size: 6vh;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10vh;
+        }
+
+        h3{
+            color: aliceblue;
+            font-size: 3vh;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .entrada{
+            text-align: center;
+            height: 4vh;
+            width: 30vh;
+            margin-left: 3vh;
+            border-radius: 5px;
+            font-size: 2vh;
+        }
+
+        button{
+            margin-left: 43vh;
+            height: 6vh;
+            width: 20vh;
+            background-color: rgb(70, 216, 70);
+            font-size: 3vh;
+            border-radius: 5px;
+        }
+
+        img{
+        
+            margin-top: 5vh ;
+            height: 50vh;
+        }
+
+        p{
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+    <h1>Soma dos Maiores!</h1>
+    <h3>Insira 3 (três) valores, e no final você terá a soma dos 2 (dois) maiores números que você inseriu:</h3>
+    
+    <div>
+        <input id="num1" class="entrada" placeholder="Insira o valor 1" type="number">
+        <input id="num2" class="entrada" placeholder="Insira o valor 2" type="number">
+        <input id="num3" class="entrada" placeholder="Insira o valor 3" type="number">
+        <br><br>
+    </div>
+
+    <div>
+        <button id="botao" onclick="SomaDosMaiores()"><b>Calcular</b></button>
+    </div>
+
+    <p id="resultado"><b></b></p>
+
+    <img src="./img/divertidamente-gif.gif" alt="Um vídeo curto de personagens em diferentes cores, do filme divertidamente">
+
+    
+    <script src="SomaDosMaiores.js"></script>
+</body>
+</html>

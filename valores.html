@@ -34,15 +34,31 @@
             text-align: center;
             font-size: 2vh;
             font-family: Arial, Helvetica, sans-serif;
-            height: 3vh;
+            height: 4vh;
             width: 30vh;
             border-radius: 5px;
-            background-color: blueviolet;
-            color: beige;
+            background-color: rgb(192, 190, 194);
+            color: rgb(0, 0, 0);
         }
 
+        .botao{
+            height: 5vh;
+            width: 10vh;
+            font-size: 2vh;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 3px;
+            background-color: rgb(214, 214, 214);
+            color: black;
 
+        }
 
+        p{
+            text-align: center;
+            font-size: 5vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
 
     </style>
 
@@ -55,7 +71,37 @@
 
     <div class="entrada">
         <input id="num" class="entrada" placeholder="Digite um valor..." type="number">
+        <button id="enviar" class="botao" onclick="lernumero()"><b>Enviar</b></button>
     </div>
-    
+
+    <div id="retorno" class="result">
+        <p id="resultado"><b></b></p>
+    </div>
+
+    <script>
+
+        function lernumero() {
+            const numero = document.getElementById("num").value;
+
+            if (numero) {
+                if (numero > 0) {
+                    // retorno caso o número seja positivo
+                    document.getElementById("resultado").textContent = 'Olha só! Seu número é positivo!';
+                    document.getElementById("retorno");
+
+                } else if (numero < 0) {
+                    //retorno caso o número seja negativo
+                    document.getElementById("resultado").textContent = 'Muito interessante, seu número é negativo!';
+                    document.getElementById("retorno");
+                } else {
+                    document.getElementById("resultado").textContent ='Que bacana! Seu número é neutro!';
+                    document.getElementById("retorno");
+                }
+            }
+        }
+
+
+    </script>
+
 </body>
 </html>

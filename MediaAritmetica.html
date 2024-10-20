@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5vh;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 3vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-entrada {
+            text-align: center;
+            margin-top: 3vh;
+        }
+
+        .entrada {
+            height: 5vh;
+            width: 30vh;
+            margin-top: 1vh;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 2.5vh;
+        }
+
+        body {
+            background-color: cornsilk;
+        }
+
+        button {
+            height: 5vh;
+            width: 20vh;
+            font-size: 2vh;
+            margin-top: 5vh;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #resultado {
+            text-align: center;
+            font-size: 2.5vh;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 3vh;
+        }
+
+        #container-resultado {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Qual será a ordem?</h1>
+    <h3>Por favor, insira 6 (seis) valores abaixo!</h3>
+
+    <div class="container-entrada">
+        <input id="num1" class="entrada" type="number" placeholder="Insira o 1º valor aqui...">
+        <input id="num2" class="entrada" type="number" placeholder="Insira o 2º valor aqui...">
+        <input id="num3" class="entrada" type="number" placeholder="Insira o 3º valor aqui...">
+        <input id="num4" class="entrada" type="number" placeholder="Insira o 4º valor aqui...">
+        <input id="num5" class="entrada" type="number" placeholder="Insira o 5º valor aqui...">
+        <input id="num6" class="entrada" type="number" placeholder="Insira o 6º valor aqui...">
+    </div><br />
+
+    <button onclick="MediaAritmetica()">Calcular</button>
+
+    <div id="container-resultado">
+        <p id="resultado"></p>
+    </div>
+
+    <script src="./MediaAritmetica.js"></script>
+</body>
+
+</html>

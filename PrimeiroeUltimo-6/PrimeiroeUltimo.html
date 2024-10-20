@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o primeiro e o último?</title>
+
+    <style>
+
+        body{
+            background-color: rgb(46, 46, 46);
+        }
+        
+        h1{
+            color: white;
+            font-size: 5vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h3{
+            color: white;
+            font-size: 3vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5vh;
+        }
+
+        .entrada{
+            text-align: center;
+            height: 5vh;
+            margin-left: 2vh;
+            font-size: 2vh;
+            
+        }
+
+        button{
+            height: 5vh;
+            width: 30vh;
+            font-size: 2.5vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(43, 209, 209);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        div{
+            text-align: center;
+            margin-top: 5vh;
+        }
+
+        #aparecer {
+            display: none;
+            color: white;
+            font-size: 2.5vh;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 5vh;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h1>Qual será o primeiro e o último? </h1>
+    <h3>Informe 4 (quatro) valores, e vamos descobrir qual <br> será o maior, o primeiro  da ordem numérica e o último, nesse respectiva ordem!</h3>
+
+    <div class="entrada">
+        <input id="num1" class="entrada" placeholder="Insira um valor..." type="number">
+        <input id="num2" class="entrada" placeholder="Insira um valor..." type="number">
+        <input id="num3" class="entrada" placeholder="Insira um valor..." type="number">
+        <input id="num4" class="entrada" placeholder="Insira um valor..." type="number">
+    </div>
+
+
+    <div>
+        <button id="botao" onclick="PrimeiroeUltimo()"><b>Qual será?</b></button>
+    </div>
+
+
+    <div id="aparecer">
+        <p id="resultado"></p>
+    </div>
+
+    <script src="./PrimeiroeUltimo.js"></script>
+
+</body>
+</html>

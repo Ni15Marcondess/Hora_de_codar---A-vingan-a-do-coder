@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Calculadora</title>
+    <link rel="stylesheet" href="./MicroCalculadora.css">
+
+</head>
+
+
+<body>
+    <h1>Micro Calculadora</h1>
+
+    <p>Informe o primeiro valor:</p>
+    <input id="valor1" type="number" placeholder="Valor 1">
+
+    <p>Informe o segundo valor:</p>
+    <input id="valor2" type="number" placeholder="Valor 2">
+
+    <p>Escolha a operação:</p>
+    <select id="operacao">
+        <option value="1">Adição</option>
+        <option value="2">Subtração</option>
+        <option value="3">Divisão</option>
+        <option value="4">Multiplicação</option>
+    </select>
+
+    <br><br>
+    <button onclick="calcular()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script src="./MicroCalculadora.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #591788; /* Roxo de fundo */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5vh;
+}
+
+h1 {
+    font-size: 5vh;
+    margin-bottom: 3vh;
+}
+
+p {
+    font-size: 2.5vh;
+    margin-bottom: 2vh;
+}
+
+input {
+    padding: 2vh;
+    margin: 2vh;
+    width: 25vh;
+    font-size: 2.2vh;
+    border-radius: 1.5vh;
+    border: none;
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    padding: 2.5vh 5vh;
+    font-size: 2.5vh;
+    background-color: #DDA0DD;
+    color: #4B0082; 
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #BA55D3; /* Efeito hover roxo mais intenso */
+}
+
+#resultado {
+    font-size: 3vh;
+    color: #FFD700; /* Cor dourada para o resultado */
+    margin-top: 3vh;
+}

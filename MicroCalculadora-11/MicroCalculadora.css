@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(45deg, purple, rgb(70, 67, 67));
+    color: #333;
+    margin: 0;
+    padding: 5vh;
+    text-align: left;
+}
+
+h1 {
+    font-size: 6vh;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+p {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    color: aliceblue;
+}
+
+input, select {
+    padding: 2vh;
+    margin: 2vh 0;
+    width: 30vh;
+    font-size: 2.5vh;
+    border-radius: 1vh;
+    border: 2px solid #4B0082;
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button {
+    padding: 2.5vh 5vh;
+    font-size: 3vh;
+    background-color: #4B0082;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #6A0DAD;
+}
+
+#resultado {
+    font-size: 3.5vh;
+    margin-top: 3vh;
+    color: #FF4500;
+}
